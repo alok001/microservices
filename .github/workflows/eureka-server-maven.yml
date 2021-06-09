@@ -24,7 +24,7 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - name: Publish to Registry
-    - uses: HurricanKai/Publish-Docker-Github-Action@master
+      uses: HurricanKai/Publish-Docker-Github-Action@master
       with:
         name: alok001/eureka-server
         username: ${{ secrets.DOCKER_USERNAME }}
